@@ -1,0 +1,318 @@
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.navbar{
+    position: fixed;
+    visibility: hidden;
+    transition: 0.6s ease;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    transform: translateY(-20px);
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding: 20px 5%; /* 👈 left-right spacing */
+    opacity: 0
+}
+
+.navbar.show{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+.nav-container{
+
+    max-width:1400px;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+.nav-links{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    top: 30px;
+    
+}
+
+.nav-links a{
+
+    color:white;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:500;
+    letter-spacing:.6px;
+    position:relative;
+    transition:.35s;
+
+}
+
+.nav-links a::after{
+
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0;
+    height:2px;
+    background:var(--gold);
+    transition:.35s;
+
+}
+
+.nav-links a:active{
+
+    color:var(--gold);
+    text-shadow: 0 0 10px rgba(200,155,93,.8);
+
+}
+
+.nav-links a:active::after{
+
+    width:100%;
+
+}
+
+@media (hover: hover) and (pointer: fine){
+
+    .nav-links a:hover{
+
+        color:var(--gold);
+        text-shadow: 0 0 10px rgba(200,155,93,.8);
+
+    }
+
+    .nav-links a:hover::after{
+
+        width:100%;
+
+    }
+
+}
+
+.nav-links a.active{
+
+    color:var(--gold);
+
+}
+
+.nav-links a.active::after{
+
+    width:100%;
+
+}
+
+.navbar.scrolled{
+
+    padding:12px 55px;
+    background:rgba(5,5,5,.75);
+    backdrop-filter:blur(24px);
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+
+}
+
+.navbar.scrolled .logo img{
+
+    width:60px;
+
+}
+
+.logo{
+
+    margin-right: auto;
+    margin-left: .2px;
+    margin-top: 2px;
+
+}
+
+
+.logo img{
+
+    margin-left: -10px;
+    width: 120px;
+    display: block;
+    /*filter: drop-shadow(0 0 10px gold);*/
+    transition: filter .35s, transform .35s;
+}
+
+
+.logo img:active{
+
+    transform:scale(1.08);
+    /*filter: drop-shadow(0 0 18px gold) drop-shadow(0 0 8px rgba(200,155,93,.6));*/    
+
+}
+
+@media (hover: hover) and (pointer: fine){
+
+    .logo img:hover{
+
+        transform:scale(1.08);
+        /*filter: drop-shadow(0 0 18px gold) drop-shadow(0 0 8px rgba(200,155,93,.6));*/
+
+    }
+
+}
+
+
+.hamburgerBtn{
+
+    display: none;
+
+}
+
+
+.menu-overlay{
+
+    position:fixed;
+    inset:0;
+
+    background:rgba(0,0,0,.55);
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:.35s;
+
+    z-index:9998;
+
+}
+
+.menu-overlay.show{
+
+    opacity:1;
+    visibility:visible;
+
+}
+
+
+/* ===========================
+   MOBILE & TABLET NAVBAR
+=========================== */
+
+@media (max-width: 991px){
+
+    .navbar{
+        padding:16px 20px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+
+    .logo img{
+        width:70px;
+    }
+
+    .hamburgerBtn{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-size:32px;
+        cursor:pointer;
+        color:#fff;
+        z-index:10001;
+        min-width:44px;
+        min-height:44px;
+        padding:6px;
+        user-select:none;
+    }
+
+    .nav-links{
+
+    position:fixed;
+
+    top:0;
+    right:0;
+    left:auto;
+
+    width:280px;
+    height:100vh;
+
+    background:#090909;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    gap:30px;
+
+    transform:translateX(100%);
+    transition:transform .35s ease;
+
+    z-index:9999;
+
+}
+
+.nav-links.active{
+
+    transform:translateX(0);
+
+}
+
+    .nav-links li{
+        list-style:none;
+    }
+
+    .nav-links a{
+        font-size:20px;
+    }
+}
+
+@media (max-width:480px){
+
+    .hamburgerBtn{
+        font-size:26px;
+        min-width:40px;
+        min-height:40px;
+        padding:4px;
+    }
+
+    .logo img{
+        width:58px;
+    }
+
+}
+
+body.menu-open{
+
+    overflow:hidden;
+
+}
+
+/* ===========================
+   DESKTOP Breakpoint
+=========================== */
+
+@media (min-width:992px){
+
+    .hamburgerBtn{
+        display:none;
+    }
+
+}
+
+@media (min-width:1600px){
+  .logo img{
+    width: 160px; /* bigger logo */
+  }
+
+  .nav-links a{
+    font-size: 18px;
+  }
+}

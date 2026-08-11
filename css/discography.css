@@ -1,0 +1,116 @@
+/* =====================================
+   DISCOGRAPHY
+===================================== */
+
+.discography{
+
+    padding:120px 5%;
+    background:#0b0b0b;
+
+}
+
+.discography-list{
+
+    margin-top:60px;
+
+}
+
+.track{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:28px;
+    margin-bottom:22px;
+    border-radius:18px;
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(255,255,255,.08);
+    transition:.4s;
+
+}
+
+.track:hover{
+
+    transform:translateY(-6px);
+    border-color:#C89B5D;
+    background:rgba(255,255,255,.05);
+
+}
+
+.track-left{
+
+    display:flex;
+    align-items:center;
+    gap:24px;
+
+}
+
+.track img{
+
+    width:90px;
+    border-radius:12px;
+
+}
+
+.track h3{
+
+    margin-bottom:8px;
+
+}
+
+.track p{
+
+    color:#999;
+
+}
+
+.track-btn{
+
+    padding:14px 28px;
+    border:2px solid #C89B5D;
+    border-radius:40px;
+    color:white;
+    text-decoration:none;
+    transition:.35s;
+
+}
+
+.track-btn:hover{
+
+    background:#C89B5D;
+    color:#111;
+
+}
+
+@media (max-width:768px){
+
+    .discography{
+
+        padding:90px 25px;
+
+    }
+
+    .track{
+
+        flex-direction:column;
+        align-items:flex-start;
+        gap:20px;
+
+    }
+
+    .track-left{
+
+        flex-direction:column;
+        align-items:flex-start;
+
+    }
+
+    .track-btn{
+
+        width:100%;
+        text-align:center;
+
+    }
+
+}
+

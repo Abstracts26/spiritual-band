@@ -1,0 +1,8 @@
+/*Hero Fade up*/
+
+.fade-up{
+
+    opacity:1;
+    transform:translateY(0);
+
+}
