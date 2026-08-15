@@ -967,6 +967,7 @@ grid-template-columns:1fr;
     
     
     width:120px;
+    margin-bottom: 15px;
     
 
 }
@@ -982,7 +983,7 @@ grid-template-columns:1fr;
 .footer p{
 
     color:#999;
-    margin-bottom:25px;
+    margin-bottom: 15px;
 
 }
 
