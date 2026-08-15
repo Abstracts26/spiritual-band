@@ -3,7 +3,8 @@
 ===================================== */
 
 const scrollIndicator = document.getElementById("scrollIndicator");
-const aboutSection = document.getElementById("about");
+const aboutSection = document.getElementById("about") ||
+    document.querySelector("main section:nth-of-type(2)");
 
 if (scrollIndicator) {
 

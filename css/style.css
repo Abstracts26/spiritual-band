@@ -1213,3 +1213,123 @@ body.menu-open{
     }
 
 }
+
+
+
+
+
+/* ==========================================
+   OUR STORY PAGE
+========================================== */
+
+.story-hero{
+    padding: 160px 8% 80px;
+    background:#0d0d0d;
+}
+
+.story-section{
+    padding: 80px 8%;
+    background:#0a0a0a;
+}
+
+.story-section:nth-of-type(even){
+    background:#0d0d0d;
+}
+
+
+/* ==========================================
+   OUR STORY - LINEUP LIST
+========================================== */
+
+.lineup-list{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    width:min(90%,900px);
+    margin:40px auto 0;
+}
+
+.lineup-row{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:16px;
+    padding:20px;
+    text-align:left;
+}
+
+.lineup-row img{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    object-fit:cover;
+    flex-shrink:0;
+}
+
+.lineup-row h3{
+    color:white;
+    margin-bottom:4px;
+}
+
+.lineup-row p{
+    color:#C89B5D;
+    margin-bottom:4px;
+}
+
+.lineup-row span{
+    color:#999;
+    font-size:14px;
+}
+
+@media (max-width:480px){
+
+    .lineup-row{
+        flex-direction:column;
+        text-align:center;
+    }
+
+}
+
+/* ==========================================
+   OUR STORY - LISTS & PARTNER TIERS
+========================================== */
+
+.story-list{
+    margin:15px 0;
+    padding-left:20px;
+    color:#cfcfcf;
+    line-height:1.9;
+}
+
+.partner-tiers{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:25px;
+    margin-top:35px;
+}
+
+.partner-tier{
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:16px;
+    padding:25px;
+}
+
+.partner-tier h3{
+    color:white;
+    margin-bottom:15px;
+}
+
+.partner-tier h3 span{
+    color:#C89B5D;
+    font-weight:400;
+    font-size:.7em;
+}
+
+.partner-tier ul{
+    padding-left:20px;
+    color:#cfcfcf;
+    line-height:1.8;
+}
