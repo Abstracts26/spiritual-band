@@ -602,7 +602,7 @@ justify-content:center;
 .player-glow-wrap{
 
     position:relative;
-    max-width:420px;
+    max-width:560px;
     margin:auto;
 
 }
@@ -629,7 +629,7 @@ justify-content:center;
 
     position:relative;
     z-index:1;
-    max-width:420px;
+    max-width:560px;
     margin:auto;
     background:#111;
     border-radius:25px;
@@ -638,57 +638,52 @@ justify-content:center;
     box-shadow:0 20px 40px rgba(0,0,0,.5);
 }
 
-.player-container img{
+.youtube-embed{
 
-    width:250px;
-    height:250px;
-    object-fit:cover;
-    border-radius:20px;
-    margin:20px 0;
-}
-
-.player-container h3{
-
-    color:white;
-    margin-bottom:10px;
-}
-
-.player-container p{
-
-    color:#bdbdbd;
-    margin-bottom:25px;
-}
-
-#progress{
-
+    position:relative;
     width:100%;
-    margin:20px 0;
-    cursor:pointer;
+    padding-top:56.25%; /* 16:9 aspect ratio */
+    margin-top:25px;
+    border-radius:12px;
+    overflow:hidden;
+    background:#000;
 }
 
-.controls{
+.youtube-embed iframe{
 
-    display:flex;
-    justify-content:center;
-    gap:25px;
-}
-
-.controls button{
-
-    width:60px;
-    height:60px;
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
     border:none;
-    border-radius:50%;
-    background:#C89B5D;
-    color:black;
-    font-size:22px;
-    cursor:pointer;
+    display:block;
+}
+
+.spotify-btn{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    margin-top:22px;
+    padding:12px 26px;
+    border-radius:50px;
+    background:#1DB954;
+    color:#111;
+    font-weight:600;
+    text-decoration:none;
     transition:.3s;
 }
 
-.controls button:hover{
+.spotify-btn:hover{
 
-    transform:scale(1.1);
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(29,185,84,.4);
+}
+
+.spotify-btn i{
+
+    font-size:18px;
 }
 
 
@@ -967,7 +962,6 @@ grid-template-columns:1fr;
     
     
     width:120px;
-    margin-bottom: 15px;
     
 
 }
@@ -983,7 +977,7 @@ grid-template-columns:1fr;
 .footer p{
 
     color:#999;
-    margin-bottom: 15px;
+    margin-bottom:25px;
 
 }
 
@@ -1206,21 +1200,9 @@ body.menu-open{
         padding:24px;
     }
 
-    .player-container img{
-        width:100%;
-        height:auto;
-        aspect-ratio:1/1;
-        max-width:250px;
-    }
-
-    .controls{
-        gap:16px;
-    }
-
-    .controls button{
-        width:50px;
-        height:50px;
-        font-size:18px;
+    .spotify-btn{
+        padding:10px 20px;
+        font-size:14px;
     }
 
 }
