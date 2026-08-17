@@ -1,0 +1,159 @@
+/* ==========================================
+   PAST EVENTS PAGE
+========================================== */
+
+.past-events-hero{
+
+    padding:160px 5% 60px;
+    text-align:center;
+    background:#0a0a0a;
+    position:relative;
+}
+
+.back-link{
+
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    color:#bdbdbd;
+    text-decoration:none;
+    font-size:14px;
+    margin-bottom:30px;
+    transition:.3s;
+}
+
+.back-link:hover{
+
+    color:var(--gold);
+}
+
+.past-events-hero h1{
+
+    font-size:clamp(36px, 6vw, 56px);
+    color:white;
+    margin-top:10px;
+}
+
+.past-events-sub{
+
+    color:#999;
+    max-width:600px;
+    margin:18px auto 0;
+    line-height:1.7;
+}
+
+/* ==========================================
+   ACCORDION LIST
+========================================== */
+
+.tour-dates{
+
+    max-width:800px;
+    margin:0 auto;
+    padding:60px 5% 120px;
+}
+
+.tour-group{
+
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:14px;
+    margin-bottom:18px;
+    overflow:hidden;
+    background:rgba(255,255,255,.02);
+    transition:.3s;
+}
+
+.tour-toggle{
+
+    width:100%;
+    display:flex;
+    align-items:center;
+    gap:14px;
+    padding:20px 24px;
+    background:none;
+    border:none;
+    cursor:pointer;
+    text-align:left;
+}
+
+.tour-arrow{
+
+    color:var(--gold);
+    font-size:16px;
+    transition:.3s;
+    width:14px;
+}
+
+.tour-year{
+
+    color:white;
+    font-size:18px;
+    font-weight:600;
+    letter-spacing:.5px;
+}
+
+.tour-shows{
+
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .4s ease;
+}
+
+.tour-group.open .tour-shows{
+
+    max-height:1000px;
+}
+
+.show-row{
+
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+    padding:14px 24px 14px 52px;
+    border-top:1px solid rgba(255,255,255,.06);
+}
+
+.show-date{
+
+    color:var(--gold);
+    font-size:13px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
+.show-venue{
+
+    color:#ddd;
+    font-size:15px;
+}
+
+.show-row.placeholder .show-date,
+.show-row.placeholder .show-venue{
+
+    color:#666;
+    font-style:italic;
+}
+
+.tour-note{
+
+    text-align:center;
+    color:#777;
+    font-size:14px;
+    margin-top:30px;
+}
+
+@media(max-width:600px){
+
+    .past-events-hero{
+        padding:130px 6% 50px;
+    }
+
+    .tour-toggle{
+        padding:16px 18px;
+    }
+
+    .show-row{
+        padding:12px 18px 12px 40px;
+    }
+
+}

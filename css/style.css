@@ -831,6 +831,25 @@ justify-content:center;
     box-shadow:0 0 25px rgba(200,155,93,.5);
 }
 
+.past-events-link{
+
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    margin-top:40px;
+    color:var(--gold);
+    text-decoration:none;
+    font-weight:600;
+    letter-spacing:.5px;
+    transition:.3s;
+}
+
+.past-events-link:hover{
+
+    gap:16px;
+    color:white;
+}
+
 @media(max-width:768px){
 
 .event-card{
