@@ -22,7 +22,7 @@ window.addEventListener("load", () => {
     // 🔊 play sound (user interaction safe way)
     setTimeout(() => {
         sound.play().catch(() => {});
-    }, 500);
+    }, 3500);
 
     setTimeout(() => {
 

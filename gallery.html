@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <title>Gallery | Spiritual Band</title>
+</head>
+<body>
+
+    <header>
+
+    <nav class="navbar show">
+
+        <a href="index.html#home" class="logo">
+            <img src="./assets/images/SL logo.png" alt="SPIRITUAL Logo">
+        </a>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="our-story.html">About</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="past-events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html#store">Store</a></li>
+
+        </ul>
+
+        <div class="hamburgerBtn" id="hamburgerBtn">
+            ☰
+        </div>
+
+        <div class="menu-overlay" id="overlay"></div>
+
+    </nav>
+
+    </header>
+
+    <main>
+
+        <section class="gallery-page-hero">
+
+            <span class="section-subtitle">MEMORIES</span>
+            <h1>Gallery</h1>
+            <p class="gallery-page-sub">Capturing moments from live performances, rehearsals and behind the scenes.</p>
+
+            <div class="gallery-filters">
+
+                <button class="filter-pill active" data-filter="all">All</button>
+                <button class="filter-pill" data-filter="live">Live</button>
+                <button class="filter-pill" data-filter="band">Band</button>
+                <button class="filter-pill" data-filter="tv-studio">TV &amp; Studio</button>
+                <button class="filter-pill" data-filter="backstage">Backstage</button>
+
+            </div>
+
+        </section>
+
+        <section class="gallery fade-up" id="gallery">
+
+            <div class="gallery-grid">
+
+                <div class="gallery-item wide" data-category="live">
+                    <img src="assets/images/gallery/1st line up.jpg" alt="Live Performance">
+                    <div class="gallery-caption">
+                        <span class="gallery-tag">Live</span>
+                        <span class="gallery-caption-text">Live Performance</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="band">
+                    <img src="assets/images/gallery/Ovishopto mix album cover.jpg" alt="Band">
+                    <div class="gallery-caption">
+                        <span class="gallery-tag">Band</span>
+                        <span class="gallery-caption-text">Band</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item tall" data-category="live">
+                    <img src="assets/images/gallery/The First Arena.jpg" alt="Stage">
+                    <div class="gallery-caption">
+                        <span class="gallery-tag">Live</span>
+                        <span class="gallery-caption-text">Stage</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="tv-studio">
+                    <img src="assets/images/gallery/Baoishakhi Tv live.jpg" alt="Studio">
+                    <div class="gallery-caption">
+                        <span class="gallery-tag">TV &amp; Studio</span>
+                        <span class="gallery-caption-text">Studio</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item wide" data-category="live">
+                    <img src="assets/images/gallery/Maqsood vai.jpg" alt="Audience">
+                    <div class="gallery-caption">
+                        <span class="gallery-tag">Live</span>
+                        <span class="gallery-caption-text">Audience</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="backstage">
+                    <img src="assets/images/gallery/Spiritual.jpg" alt="Backstage">
+                    <div class="gallery-caption">
+                        <span class="gallery-tag">Backstage</span>
+                        <span class="gallery-caption-text">Backstage</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <div id="lightbox">
+
+        <span id="close">&times;</span>
+
+        <img id="lightbox-img">
+
+    </div>
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <h2>SPIRITUAL</h2>
+
+            <p>TRY TO FIND WHAT'S BEHIND YOUR SOUL</p>
+
+            <div class="footer-social">
+
+                <a href="https://www.facebook.com/spiritual.bd" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/spiritualband_official" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@Spiritualbandofficial" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.tiktok.com/@spiritualband" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.threads.com/spiritualband_official" target="_blank"><i class="fa-brands fa-threads"></i></a>
+                <a href="https://x.com/Spiritual_bd" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            
+            </div>
+
+            <p class="copyright">
+
+                © 2026 Spiritual Band. All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+<div id="scrollIndicator" class="scroll-indicator">↓</div>
+
+
+<script src="./js/hero.js"></script>
+<script src="./js/navbar.js"></script>
+<script src="./js/scroll.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/script.js"></script>
+<script src="./js/contact.js"></script>
+<script src="./js/past-events.js"></script>
+<script src="./js/gallery.js"></script>
+<script src="./js/music-page.js"></script>
+
+</body>
+</html>

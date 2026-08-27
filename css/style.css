@@ -333,6 +333,14 @@ section > * {
     color:white;
 }
 
+.about-content h1{
+
+    font-family: 'Cinzel', serif;
+    font-size:50px;
+    margin:20px 0;
+    color:white;
+}
+
 /* Paragraph */
 .about-content p{
 
@@ -977,14 +985,6 @@ grid-template-columns:1fr;
 
 }
 
-.footer-logo{
-    
-    
-    width:120px;
-    
-
-}
-
 .footer h2{
     font-family: 'Cinzel', serif;
     color:white;
@@ -1345,3 +1345,4 @@ body.menu-open{
     color:#cfcfcf;
     line-height:1.8;
 }
+

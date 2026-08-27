@@ -1,0 +1,283 @@
+/* ==========================================
+   CONTACT PAGE — styled after reference layout
+========================================== */
+
+/* ---------- HERO ---------- */
+.contact-hero{
+  position: relative;
+  min-height: 70vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  align-items:flex-start;
+  padding: 0 5% 70px;
+
+  background: url("../assets/images/contact page.png") center / cover no-repeat;
+  overflow: hidden;
+}
+
+.contact-hero-overlay{
+  position: absolute;
+  inset: 50px;
+  background: linear-gradient(180deg, rgba(5,5,5,.55) 0%, rgba(5,5,5,.35) 45%, rgba(5,5,5,.92) 100%);
+}
+
+.contact-hero h1{
+  position: relative;
+  z-index: 2;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  color: var(--white);
+  font-size: clamp(52px, 9vw, 120px);
+  line-height: 1;
+  letter-spacing: 1px;
+  text-shadow: 0 6px 30px rgba(0,0,0,.6);
+}
+
+.contact-hero-scroll{
+  position: relative;
+  z-index: 2;
+  margin-top: 24px;
+  color: var(--gray);
+  font-size: 20px;
+  animation: contactBounce 1.8s ease-in-out infinite;
+}
+
+@keyframes contactBounce{
+  0%,100%{ transform: translateY(0); opacity:.6; }
+  50%{ transform: translateY(8px); opacity:1; }
+}
+
+/* ---------- SECTION WRAPPER ---------- */
+.contact-section{
+  background: var(--black);
+  padding: 70px 5% 40px;
+}
+
+.contact-section-inner{
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 70px;
+  align-items: start;
+}
+
+/* ---------- LEFT: FORM ---------- */
+.contact-form-col h2{
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  font-size: clamp(20px, 2.4vw, 28px);
+  color: var(--white);
+  padding-bottom: 18px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid rgba(255,255,255,.18);
+}
+
+#contactForm{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.field{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field label{
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  letter-spacing: .4px;
+  color: var(--gray);
+}
+
+.field label span{
+  color: var(--gold);
+  margin-left: 3px;
+}
+
+.field input,
+.field textarea,
+.field select{
+  background: #0d0d0d;
+  border: 1px solid #2a2a2a;
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  padding: 13px 14px;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color .3s, box-shadow .3s;
+  width: 100%;
+}
+
+.field textarea{
+  min-height: 150px;
+  resize: vertical;
+  font-family: 'Poppins', sans-serif;
+}
+
+.field select{
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'><path d='M1 1l6 6 6-6' stroke='%23C89B5D' stroke-width='2' fill='none' fill-rule='evenodd'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  cursor: pointer;
+}
+
+.field select option{
+  background: #0d0d0d;
+  color: var(--white);
+}
+
+.field input:focus,
+.field textarea:focus,
+.field select:focus{
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(200,155,93,.15);
+}
+
+.field.full{
+  grid-column: 1 / -1;
+}
+
+#contactForm button{
+  align-self: flex-start;
+  margin-top: 8px;
+  background: var(--gold);
+  color: var(--black);
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  letter-spacing: .5px;
+  padding: 14px 34px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform .3s, box-shadow .3s;
+}
+
+#contactForm button:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(200,155,93,.35);
+}
+
+/* ---------- RIGHT: SIDEBAR ---------- */
+.contact-side-col{
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.press-passes-btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  border: 1px solid rgba(255,255,255,.25);
+  color: var(--white);
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  letter-spacing: .4px;
+  padding: 12px 20px;
+  border-radius: 4px;
+  transition: .3s;
+}
+
+.press-passes-btn i{
+  color: var(--gold);
+}
+
+.press-passes-btn:hover{
+  border-color: var(--gold);
+  background: rgba(200,155,93,.08);
+}
+
+.contact-side-col h3{
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--white);
+  padding-bottom: 12px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid rgba(255,255,255,.18);
+}
+
+.social-row{
+  display: flex;
+  gap: 14px;
+}
+
+.social-row a{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #101010;
+  border: 1px solid rgba(255,255,255,.15);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.social-row a:hover{
+  background: var(--gold);
+  color: var(--black);
+  border-color: var(--gold);
+  transform: translateY(-3px);
+}
+
+.member-links{
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.member-link-list{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.member-link-list a{
+  color: var(--gray);
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  transition: color .3s;
+  width: fit-content;
+}
+
+.member-link-list a:hover{
+  color: var(--gold);
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 900px){
+  .contact-section-inner{
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .form-row{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px){
+  .contact-hero{
+    padding: 0 20px 50px;
+    min-height: 55vh;
+  }
+}

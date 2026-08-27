@@ -1,0 +1,375 @@
+/* ==========================================
+   MUSIC PAGE HERO
+========================================== */
+
+.music-page-hero{
+
+    padding:160px 5% 50px;
+    text-align:center;
+    background:#0a0a0a;
+}
+
+.music-page-hero .back-link{
+
+    width:fit-content;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    color:#bdbdbd;
+    text-decoration:none;
+    font-size:14px;
+    margin-bottom:30px;
+    transition:.3s;
+}
+
+.music-page-hero .back-link:hover{
+
+    color:var(--gold);
+}
+
+.music-page-hero h1{
+
+    font-size:clamp(36px, 6vw, 56px);
+    color:white;
+    margin-top:10px;
+}
+
+.music-page-sub{
+
+    color:#999;
+    max-width:600px;
+    margin:18px auto 0;
+    line-height:1.7;
+}
+
+.music-jump-links{
+
+    display:flex;
+    justify-content:center;
+    gap:28px;
+    margin-top:30px;
+}
+
+.music-jump-links a{
+
+    color:var(--gold);
+    text-decoration:none;
+    font-size:14px;
+    letter-spacing:.5px;
+    border-bottom:1px solid transparent;
+    transition:.3s;
+}
+
+.music-jump-links a:hover{
+
+    border-bottom-color:var(--gold);
+}
+
+/* ==========================================
+   SHARED SECTION HEADING
+========================================== */
+
+.music-section-heading{
+
+    width:100%;
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.music-section-heading h2{
+
+    color:white;
+    font-size:clamp(28px, 5vw, 42px);
+    margin-top:10px;
+}
+
+.videos-sub{
+
+    color:#777;
+    font-size:13px;
+    margin-top:8px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
+/* ==========================================
+   ALBUMS
+========================================== */
+
+.music-albums{
+
+    padding:80px 5%;
+    background:#0a0a0a;
+}
+
+.albums-grid{
+
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    gap:32px;
+}
+
+.album-card{
+
+    width:100%;
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    overflow:hidden;
+    transition:.35s;
+}
+
+.album-card:hover{
+
+    transform:translateY(-6px);
+    border-color:var(--gold);
+    box-shadow:0 20px 40px rgba(0,0,0,.4);
+}
+
+.album-card img{
+
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    display:block;
+}
+
+.album-card-info{
+
+    padding:22px;
+}
+
+.album-card-info h3{
+
+    color:white;
+    font-size:20px;
+    margin-bottom:4px;
+}
+
+.album-meta{
+
+    color:var(--gold);
+    font-size:13px;
+    letter-spacing:.5px;
+    margin-bottom:16px;
+}
+
+.album-embed{
+
+    border-radius:12px;
+    overflow:hidden;
+    margin-bottom:16px;
+}
+
+.album-embed iframe{
+
+    display:block;
+    width:100%;
+}
+
+.placeholder-embed{
+
+    height:80px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(255,255,255,.03);
+    border:1px dashed rgba(255,255,255,.15);
+    color:#777;
+    font-size:13px;
+    font-style:italic;
+}
+
+.view-lyrics-link{
+
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    color:#ccc;
+    text-decoration:none;
+    font-size:13px;
+    transition:.3s;
+}
+
+.view-lyrics-link:hover{
+
+    color:var(--gold);
+}
+
+/* ==========================================
+   VIDEOS
+========================================== */
+
+.music-videos{
+
+    padding:80px 5%;
+    background:#080808;
+}
+
+.videos-grid{
+
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    gap:32px;
+}
+
+.video-card{
+
+    width:100%;
+}
+
+.video-embed{
+
+    position:relative;
+    width:100%;
+    padding-top:56.25%;
+    border-radius:14px;
+    overflow:hidden;
+    background:#000;
+}
+
+.video-embed iframe{
+
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    border:none;
+    display:block;
+}
+
+.video-embed.placeholder-embed{
+
+    position:relative;
+    padding-top:56.25%;
+    height:auto;
+    border-radius:14px;
+}
+
+.video-embed.placeholder-embed{
+    display:block;
+}
+
+.video-card .video-embed.placeholder-embed{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+}
+
+.video-card h3{
+
+    color:white;
+    font-size:16px;
+    margin-top:14px;
+    text-align:center;
+}
+
+.placeholder-video h3{
+
+    color:#777;
+    font-style:italic;
+}
+
+/* ==========================================
+   LYRICS ACCORDION
+========================================== */
+
+.music-lyrics{
+
+    padding:80px 5% 120px;
+    background:#0a0a0a;
+}
+
+.lyrics-list{
+
+    width:100%;
+    max-width:800px;
+    margin:0 auto;
+}
+
+.lyrics-group{
+
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:14px;
+    margin-bottom:18px;
+    overflow:hidden;
+    background:rgba(255,255,255,.02);
+}
+
+.lyrics-toggle{
+
+    width:100%;
+    display:flex;
+    align-items:center;
+    gap:14px;
+    padding:20px 24px;
+    background:none;
+    border:none;
+    cursor:pointer;
+    text-align:left;
+}
+
+.lyrics-arrow{
+
+    color:var(--gold);
+    font-size:16px;
+    width:14px;
+    transition:.3s;
+}
+
+.lyrics-title{
+
+    color:white;
+    font-size:17px;
+    font-weight:600;
+}
+
+.lyrics-body{
+
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .45s cubic-bezier(.4,0,.2,1);
+}
+
+.lyrics-placeholder{
+
+    padding:0 24px 20px 52px;
+    color:#888;
+    font-style:italic;
+    font-size:14px;
+    white-space:pre-line;
+    line-height:1.8;
+}
+
+@media(max-width:600px){
+
+    .music-page-hero{
+        padding:130px 6% 40px;
+    }
+
+    .music-jump-links{
+        gap:18px;
+    }
+
+    .music-albums,
+    .music-videos,
+    .music-lyrics{
+        padding:60px 6%;
+    }
+
+    .lyrics-toggle{
+        padding:16px 18px;
+    }
+
+    .lyrics-placeholder{
+        padding:0 18px 16px 40px;
+    }
+
+}
