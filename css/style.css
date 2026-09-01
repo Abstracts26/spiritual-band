@@ -339,6 +339,7 @@ section > * {
     font-size:50px;
     margin:20px 0;
     color:white;
+    letter-spacing:3px;
 }
 
 /* Paragraph */
@@ -502,105 +503,6 @@ text-align:center;
 }
 
 
-/* Album Cover */
-/*.album-image{
-
-    display:flex;
-    justify-content:center;
-}
-
-.album-image img{
-
-    width:100%;
-    max-width:420px;
-    border-radius:20px;
-    box-shadow:0 25px 50px rgba(0,0,0,.6);
-    transition:.5s;
-}
-
-.album-image img:hover{
-
-    transform:scale(1.05) rotate(-2deg);
-}
-
-.album-content h2{
-
-    font-size:52px;
-    color:white;
-    margin:20px 0;
-}
-
-.release-date{
-
-    color:#C89B5D;
-    margin-bottom:25px;
-    letter-spacing:2px;
-}
-
-.album-content p{
-
-    color:#bdbdbd;
-    line-height:1.8;
-    margin-bottom:25px;
-}
-
-.album-buttons{
-
-    display:flex;
-    gap:20px;
-    flex-wrap:wrap;
-}
-
-.listen-btn{
-
-    background:#C89B5D;
-    color:black;
-    padding:15px 35px;
-    border-radius:50px;
-    text-decoration:none;
-    font-weight:bold;
-    transition:.4s;
-}
-
-.listen-btn:hover{
-
-    transform:translateY(-5px);
-    box-shadow:0 0 25px rgba(200,155,93,.5);
-}
-
-.lyrics-btn{
-
-    border:2px solid #C89B5D;
-    color:white;
-    padding:15px 35px;
-    border-radius:50px;
-    text-decoration:none;
-    transition:.4s;
-}
-
-.lyrics-btn:hover{
-
-    background:#C89B5D;
-    color:black;
-}
-
-@media(max-width:768px){
-
-.album-container{
-
-grid-template-columns:1fr;
-text-align:center;
-
-}
-
-.album-buttons{
-
-justify-content:center;
-
-}
-
-}*/
-
 .music-player{
 
     background:#000;
@@ -693,65 +595,6 @@ justify-content:center;
 
     font-size:18px;
 }
-
-
-
-/*.gallery{
-
-    background:#0a0a0a;
-    padding:120px 8%;
-}
-
-.gallery-grid{
-
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:25px;
-}
-
-.gallery-item{
-
-    width:100%;
-    height:280px;
-    object-fit:cover;
-    border-radius:18px;
-    cursor:pointer;
-    transition:.4s;
-}
-
-.gallery-item:hover{
-
-    transform:scale(1.05);
-    box-shadow:0 20px 40px rgba(0,0,0,.5);
-}
-
-#lightbox{
-
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,.95);
-    display:none;
-    justify-content:center;
-    align-items:center;
-    z-index:9999;
-}
-
-#lightbox img{
-
-    max-width:90%;
-    max-height:90%;
-    border-radius:20px;
-}
-
-#close{
-
-    position:absolute;
-    top:30px;
-    right:40px;
-    color:white;
-    font-size:50px;
-    cursor:pointer;
-}*/
 
 .events{
 
